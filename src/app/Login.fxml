@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.Controller">
+    <children>
+        <ImageView fitHeight="614.0" fitWidth="1201.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/Login-Register.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="signInButton" layoutX="63.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleButtonLogin" prefHeight="30.0" prefWidth="120.0" text="Sign in" />
+        <PasswordField fx:id="passwordField" layoutX="63.0" layoutY="243.0" prefHeight="42.0" prefWidth="245.0">
+            <effect>
+                <ColorAdjust brightness="0.36" contrast="-0.32" hue="0.24" saturation="0.19" />
+            </effect>
+        </PasswordField>
+        <TextField fx:id="usernameField" layoutX="63.0" layoutY="175.0" prefHeight="42.0" prefWidth="245.0">
+            <effect>
+                <ColorAdjust brightness="0.36" contrast="-0.32" hue="0.24" saturation="0.19" />
+            </effect>
+        </TextField>
+        <Label layoutX="72.0" layoutY="81.0" prefHeight="55.0" prefWidth="204.0" text="eLibrary Login" textFill="#b22a2a">
+            <font>
+                <Font name="Times New Roman" size="32.0" />
+            </font>
+        </Label>
+        <Label fx:id="usernameLabel" layoutX="61.0" layoutY="154.0" text="Username" />
+        <Label fx:id="passwordLabel" layoutX="63.0" layoutY="222.0" text="Password" />
+      <Button fx:id="registerButton" layoutX="188.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleButtonRegister" prefHeight="31.0" prefWidth="120.0" text="Register" />
+    </children>
+</AnchorPane>
